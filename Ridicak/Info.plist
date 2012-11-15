@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CFBundleDisplayName</key>
+	<string>AUTOŠKOLA</string>
 	<key>CFBundleIconFiles</key>
 	<array>
 		<string>meta/114.png</string>
@@ -11,8 +13,12 @@
 		<string>meta/58.png</string>
 		<string>meta/50.png</string>
 	</array>
+	<key>CFBundleIdentifier</key>
+	<string>ridicak</string>
+	<key>CFBundleVersion</key>
+	<string>0.0.1</string>
 	<key>MinimumOSVersion</key>
-	<string>4.0</string>
+	<string>5.0</string>
 	<key>UIDeviceFamily</key>
 	<array>
 		<integer>1</integer>

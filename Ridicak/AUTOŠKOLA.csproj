@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6C8D4C29-94CF-4084-847C-4BBBC9D6B8F6}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Ridicak</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>Ridicak</AssemblyName>
+    <Description>Nekonečná a jednoduchá řada zkouškových otázek. Simples!</Description>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <MtouchDebug>True</MtouchDebug>
+    <MtouchProfiling>True</MtouchProfiling>
+    <MtouchLink>None</MtouchLink>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>True</MtouchDebug>
+    <MtouchProfiling>True</MtouchProfiling>
+    <IpaPackageName />
+    <MtouchI18n />
+    <MtouchArch>ARMv7</MtouchArch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <BuildIpa>True</BuildIpa>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="monotouch" />
+    <Reference Include="MonoTouch.Dialog-1" />
+    <Reference Include="ServiceStack.Text.MonoTouch">
+      <HintPath>..\..\..\ServiceStack.Text\src\ServiceStack.Text.MonoTouch\ServiceStack.Text.MonoTouch\bin\Debug\ServiceStack.Text.MonoTouch.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="RidicakViewController.cs" />
+    <Compile Include="RidicakViewController.designer.cs">
+      <DependentUpon>RidicakViewController.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="RidicakViewController.xib" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Content Include="Images\0014.jpg" />
+    <Content Include="Images\0023.jpg" />
+    <Content Include="Images\0029.jpg" />
+    <Content Include="Images\0033.jpg" />
+    <Content Include="Images\0037.jpg" />
+    <Content Include="Images\0038.jpg" />
+    <Content Include="Images\0041.jpg" />
+    <Content Include="Images\0046.jpg" />
+    <Content Include="Images\0049.jpg" />
+    <Content Include="Images\0051.jpg" />
+    <Content Include="Images\0052.jpg" />
+    <Content Include="Images\0053.jpg" />
+    <Content Include="Images\0066.jpg" />
+    <Content Include="Images\0073.jpg" />
+    <Content Include="Images\0076.jpg" />
+    <Content Include="Images\0078.jpg" />
+    <Content Include="Images\0083.jpg" />
+    <Content Include="Images\0086.jpg" />
+    <Content Include="Images\0091.jpg" />
+    <Content Include="Images\0096.jpg" />
+    <Content Include="Images\0102.jpg" />
+    <Content Include="Images\0109.jpg" />
+    <Content Include="Images\0110.jpg" />
+    <Content Include="Images\0117.jpg" />
+    <Content Include="Images\0123.jpg" />
+    <Content Include="Images\0130.jpg" />
+    <Content Include="Images\0172.jpg" />
+    <Content Include="Images\0181.jpg" />
+    <Content Include="Images\0186.jpg" />
+    <Content Include="Images\0188.jpg" />
+    <Content Include="Images\0193.jpg" />
+    <Content Include="Images\0210.jpg" />
+    <Content Include="Images\0211.jpg" />
+    <Content Include="Images\0231.jpg" />
+    <Content Include="Images\0233.jpg" />
+    <Content Include="Images\0251.jpg" />
+    <Content Include="Images\0262.jpg" />
+    <Content Include="Images\0287.jpg" />
+    <Content Include="Images\0296.jpg" />
+    <Content Include="Images\0297.jpg" />
+    <Content Include="Images\0298.jpg" />
+    <Content Include="Images\0299.jpg" />
+    <Content Include="Images\0300.jpg" />
+    <Content Include="Images\0319.jpg" />
+    <Content Include="Images\0348.jpg" />
+    <Content Include="Images\0376.jpg" />
+    <Content Include="Images\0383.jpg" />
+    <Content Include="Images\0390.jpg" />
+    <Content Include="Images\0391.jpg" />
+    <Content Include="Images\0401.jpg" />
+    <Content Include="Images\0403.jpg" />
+    <Content Include="Images\0416.jpg" />
+    <Content Include="Images\0425.jpg" />
+    <Content Include="Images\0429.jpg" />
+    <Content Include="Images\0434.jpg" />
+    <Content Include="Images\0444.jpg" />
+    <Content Include="Images\0445.jpg" />
+    <Content Include="Images\0447.jpg" />
+    <Content Include="Images\0450.jpg" />
+    <Content Include="Images\0454.jpg" />
+    <Content Include="Images\0458.jpg" />
+    <Content Include="Images\0460.jpg" />
+    <Content Include="Images\0474.jpg" />
+    <Content Include="Images\0476.jpg" />
+    <Content Include="Images\0478.jpg" />
+    <Content Include="Images\10040019.jpg" />
+    <Content Include="Images\10040020.jpg" />
+    <Content Include="Images\10040026.jpg" />
+    <Content Include="Images\10040027.jpg" />
+    <Content Include="Images\10040037.jpg" />
+    <Content Include="Images\11001.jpg" />
+    <Content Include="Images\11002.jpg" />
+    <Content Include="Images\11003.jpg" />
+    <Content Include="Images\11004.jpg" />
+    <Content Include="Images\5001.jpg" />
+    <Content Include="Images\5003.jpg" />
+    <Content Include="Images\5004.jpg" />
+    <Content Include="Images\5006c.jpg" />
+    <Content Include="Images\5009.jpg" />
+    <Content Include="Images\5010a.jpg" />
+    <Content Include="Images\5010b.jpg" />
+    <Content Include="Images\5012a.jpg" />
+    <Content Include="Images\5014.jpg" />
+    <Content Include="Images\5018.jpg" />
+    <Content Include="Images\5019.jpg" />
+    <Content Include="Images\5020.jpg" />
+    <Content Include="Images\5021.jpg" />
+    <Content Include="Images\5022.jpg" />
+    <Content Include="Images\5023.jpg" />
+    <Content Include="Images\5024.jpg" />
+    <Content Include="Images\5027.jpg" />
+    <Content Include="Images\5029.jpg" />
+    <Content Include="Images\5030.jpg" />
+    <Content Include="Images\5031.jpg" />
+    <Content Include="Images\5036.jpg" />
+    <Content Include="Images\5039.jpg" />
+    <Content Include="Images\5058a.jpg" />
+    <Content Include="Images\5063.jpg" />
+    <Content Include="Images\5068.jpg" />
+    <Content Include="Images\585b.jpg" />
+    <Content Include="Images\a10.jpg" />
+    <Content Include="Images\a11.jpg" />
+    <Content Include="Images\a12.jpg" />
+    <Content Include="Images\a13.jpg" />
+    <Content Include="Images\a14.jpg" />
+    <Content Include="Images\a15.jpg" />
+    <Content Include="Images\a16.jpg" />
+    <Content Include="Images\a17.jpg" />
+    <Content Include="Images\a18.jpg" />
+    <Content Include="Images\a19.jpg" />
+    <Content Include="Images\a1a.jpg" />
+    <Content Include="Images\a1b.jpg" />
+    <Content Include="Images\a20.jpg" />
+    <Content Include="Images\a22.jpg" />
+    <Content Include="Images\a23.jpg" />
+    <Content Include="Images\a24.jpg" />
+    <Content Include="Images\a25.jpg" />
+    <Content Include="Images\a26.jpg" />
+    <Content Include="Images\a27.jpg" />
+    <Content Include="Images\a28.jpg" />
+    <Content Include="Images\a2a.jpg" />
+    <Content Include="Images\a2b.jpg" />
+    <Content Include="Images\a3.jpg" />
+    <Content Include="Images\a30.jpg" />
+    <Content Include="Images\a31b.jpg" />
+    <Content Include="Images\a32a.jpg" />
+    <Content Include="Images\a4.jpg" />
+    <Content Include="Images\a5a.jpg" />
+    <Content Include="Images\a5b.jpg" />
+    <Content Include="Images\a6a.jpg" />
+    <Content Include="Images\a6b.jpg" />
+    <Content Include="Images\a7a.jpg" />
+    <Content Include="Images\a7b.jpg" />
+    <Content Include="Images\a8.jpg" />
+    <Content Include="Images\a9.jpg" />
+    <Content Include="Images\b1.jpg" />
+    <Content Include="Images\b10.jpg" />
+    <Content Include="Images\b11.jpg" />
+    <Content Include="Images\b12.jpg" />
+    <Content Include="Images\b13.jpg" />
+    <Content Include="Images\b14.jpg" />
+    <Content Include="Images\b15.jpg" />
+    <Content Include="Images\b16.jpg" />
+    <Content Include="Images\b17.jpg" />
+    <Content Include="Images\b18.jpg" />
+    <Content Include="Images\b2.jpg" />
+    <Content Include="Images\b21a.jpg" />
+    <Content Include="Images\b22b.jpg" />
+    <Content Include="Images\b23a.jpg" />
+    <Content Include="Images\b23b.jpg" />
+    <Content Include="Images\b24a.jpg" />
+    <Content Include="Images\b24b.jpg" />
+    <Content Include="Images\b25.jpg" />
+    <Content Include="Images\b26.jpg" />
+    <Content Include="Images\b27.jpg" />
+    <Content Include="Images\b28.jpg" />
+    <Content Include="Images\b29.jpg" />
+    <Content Include="Images\b30.jpg" />
+    <Content Include="Images\b31.jpg" />
+    <Content Include="Images\b32.jpg" />
+    <Content Include="Images\b33.jpg" />
+    <Content Include="Images\b3a.jpg" />
+    <Content Include="Images\b3b.jpg" />
+    <Content Include="Images\b4.jpg" />
+    <Content Include="Images\b5.jpg" />
+    <Content Include="Images\b6.jpg" />
+    <Content Include="Images\b7.jpg" />
+    <Content Include="Images\b8.jpg" />
+    <Content Include="Images\b9.jpg" />
+    <Content Include="Images\c5a.jpg" />
+    <Content Include="Images\p2.jpg" />
+    <Content Include="Images\z11c.jpg" />
+    <Content Include="Images\z11d.jpg" />
+    <Content Include="Otazky.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="meta\29.png" />
+    <Content Include="meta\50.png" />
+    <Content Include="meta\57.png" />
+    <Content Include="meta\58.png" />
+    <Content Include="meta\72.png" />
+    <Content Include="meta\114.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\" />
+    <Folder Include="meta\" />
+  </ItemGroup>
+</Project>

@@ -1,8 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|iPhone" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Ridicak/AppDelegate.cs">
     <Files>
-      <File FileName="Ridicak/AppDelegate.cs" Line="327" Column="14" />
+      <File FileName="Ridicak/AppDelegate.cs" Line="22" Column="32" />
       <File FileName="Ridicak/RidicakViewController.cs" Line="156" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
@@ -10,4 +10,7 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.AUTOŠKOLA>
+    <IPhoneZipBundleSettings CurrentFolder="/Users/vladimirslavin/Projects/Ridicak" />
+  </MonoDevelop.Ide.ItemProperties.AUTOŠKOLA>
 </Properties>
