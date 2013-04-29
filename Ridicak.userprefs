@@ -1,9 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|iPhone" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|iPhone" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Ridicak/AppDelegate.cs">
     <Files>
       <File FileName="Ridicak/AppDelegate.cs" Line="22" Column="32" />
-      <File FileName="Ridicak/RidicakViewController.cs" Line="156" Column="1" />
+      <File FileName="Ridicak/RidicakViewController.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
